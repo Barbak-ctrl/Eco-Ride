@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/covoiturages.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Eco-Ride — Covoiturages</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header flux">
+        <a href="index.html" aria-label="Accueil Eco-Ride">
+            <img class="logo" src="../assets/Logo-Eco-Ride.png" alt="Logo Eco-Ride">
+        </a>
+        <nav>
+            <ul class="list-links">
+                <li class="nav-link"><a href="covoiturages.html">Covoiturages</a></li>
+                <li class="nav-link"><a href="connexion.html" target="_blank">Connexion</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- START :Barre de recherche + filtres -->
+        <section class="search-zone flux">
+
+            <h2>Rechercher un covoiturage</h2>
+
+            <div class="search-bar">
+
+                <!-- Recherche principale -->
+                <input type="text" placeholder="Lieu de départ" id="lieuDepart">
+                <input type="date" id="dateDepart">
+                <input type="text" placeholder="Lieu d'arrivée" id="lieuArrivee">
+
+                <!-- Filtres avancés intégrés -->
+                <div class="advanced-filters">
+
+
+                    <label class="filter-item">
+                        Prix max :
+                        <input type="number" id="filtrePrix" min="0" placeholder="€">
+                    </label>
+
+                    <label class="filter-item">
+                        Durée max :
+                        <input type="number" id="filtreDuree" min="0" placeholder="min">
+                    </label>
+
+                    <label class="filter-item">
+                        Note min :
+                        <input type="number" id="filtreNote" min="0" max="5" step="0.5" placeholder="0 à 5">
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox" id="filtreEco">
+                        Éco
+                    </label>
+                </div>
+
+                <button class="search-btn" id="btnRecherche">Rechercher</button>
+            </div>
+
+
+
+            <!-- RÉSULTATS DES COVOITURAGES -->
+            <section class="results flux">
+                <h2>Résultats</h2>
+                <div id="listeCovoiturages" class="covoit-list">
+                    <!-- Les cartes seront injectées ici en JS -->
+                </div>
+            </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer flux" role="contentinfo">
+        <div class="footer-inner">
+            <a href="mailto:covoiturage@eco-ride.fr" class="footer-email">covoiturage@eco-ride.fr</a>
+            <a href="mentions-legales.html" class="footer-legal" target="_blank">Mentions légales</a>
+        </div>
+        <div class="footer-copy">© Eco-Ride</div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+/* reset */
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style général */
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.flux {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+@media (max-width: 500px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.title-2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.text-paragraphe {
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/background-Eco-Ride.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/*START : Stylisation de la barre de recherche */
+
+
+
+.search-bar {
+    display: flex;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    max-width: 900px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.search-bar input {
+    flex: 1 1 180px;
+    padding: 10px;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search-btn {
+    flex: 1 1 150px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background: #1b5e20;
+}
+
+
+/* START : Stylisation du header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list-links {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:first-child {
+    background-color: #4c9a31;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* START : Stylisation de la présentation */
+
+
+
+.cover {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .cover {
+        flex-direction: column;
+    }
+}
+
+.cover-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #88be65;
+}
+
+
+.container-images {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.container-images li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    min-height: 280px;
+}
+
+.container-images .cover-content {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+}
+
+.container-images .item-text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;
+    color: #0b3d2e;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    max-width: 360px;
+}
+
+@media (max-width: 800px) {
+    .container-images {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .container-images li {
+        min-height: auto;
+    }
+
+    .container-images .cover-content {
+        max-width: 240px;
+    }
+}
+
+/* START : Stylisation footer */
+
+.site-footer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 18px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    color: #0b3d2e;
+    font-size: 14px;
+}
+
+.footer-inner {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-email {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.footer-legal {
+    color: #333;
+    text-decoration: underline;
+}
+
+.footer-copy {
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+@media (max-width:500px) {
+    .site-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 6px;
+    }
+}

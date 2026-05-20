@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=../scripts/scripts.js defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Eco-Ride</title>
+</head>
+
+<body>
+    <!-- START header : Barre de navigation de la page -->
+    <header class="header flux">
+        <a href="index.html" aria-label="Accueil Eco-Ride">
+            <img class="logo" src="../assets/Logo-Eco-Ride.png" alt="Logo Eco-Ride">
+        </a>
+        <nav>
+            <ul class="list-links">
+                <li class="nav-link">
+                    <!-- _self = ouverture du lien dans l'onglet actuel -->
+                    <a href="covoiturages.html" target="_self">
+                        Covoiturages
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <!-- _blank = ouverture du lien dans un nouvel onglet -->
+                    <a href="https://www.stationf.co" target="_blank">
+                        Connexion
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- END header-->
+    <main>
+        <!--START : Barre de recherche itinéraire -->
+        <div class="search-bar">
+            <input type="text" placeholder="Lieu de départ" class="start">
+            <input type="date" class="date-start">
+            <input type="text" placeholder="Lieu d'arrivée" class="end">
+            <input type="date" class="date-end">
+            <button class="search-btn">Rechercher</button>
+        </div>
+        <!--END : Barre de recherche itinéraire -->
+
+        <!--START : Présentation de la page -->
+
+        <section class="cover flux">
+            <div>
+                <h1 class="cover-title"> Eco-Ride </h1>
+                <p>Bienvenue sur Eco-Ride, le site de covoiturage Eco-responsable.</p>
+                <div class="cover-text">
+                    <ul class="container-images">
+                        <li>
+                            <img src="../assets/empreinte_carbone_reduite.png" alt="image réduire son empreinte carbone"
+                                class="cover-content">
+                            <h3>Réduisez votre impact</h3>
+                            <p class="item-texts">Chaque trajet
+                                partagé en véhicule électrique diminue les émissions et soutient la transition
+                                écologique.</p>
+                        </li>
+                        <li> <img src="../assets/trajets_economiques.png" alt="image économisez de l'argent"
+                                class="cover-content">
+                            <h3>Economisez de l'argent</h3>
+                            <p class="item-texts">Voyagez en partageant les frais du véhicule et de péages.</p>
+                        </li>
+                        <li>
+                            <img src="../assets/trouve_ton_trajet.png" alt="image trouvez votre trajet"
+                                class="cover-content">
+                            <h3>Trouvez des trajets fiables</h3>
+                            <p class="item-texts">Une plateforme fluide, des conducteurs vérifiés et une réservation en
+                                quelques secondes.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../assets/ensemble_pour_la_planète.png" alt=" image communauté engagée"
+                                class="cover-content">
+                            <h3>Rejoignez une communauté engagée</h3>
+                            <p class="item-texts">Des utilisateurs qui partagent vos valeurs et votre envie
+                                d'agir pour la planète.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- END : Présentation de la page -->
+    </main>
+
+</body>
+
+<footer>
+    <footer class="site-footer flux" role="contentinfo">
+        <div class="footer-inner">
+            <a href="mailto:covoiturage@eco-ride.fr" class="footer-email">covoiturage@eco-ride.fr</a>
+            <a href="mentions-legales.html" class="footer-legal" target="_blank">Mentions légales</a>
+        </div>
+        <div class="footer-copy">© Eco-Ride</div>
+    </footer>
+</footer>
+
+</html>

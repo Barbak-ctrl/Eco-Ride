@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=../scripts/detail.js defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Détail du covoiturage - EcoRide</title>
+
+</head>
+
+<body>
+
+    <!-- START header : Barre de navigation de la page -->
+    <header class="header flux">
+        <a href="index.html" aria-label="Accueil Eco-Ride">
+            <img class="logo" src="../assets/Logo-Eco-Ride.png" alt="Logo Eco-Ride">
+        </a>
+        <nav>
+            <ul class="list-links">
+                <li class="nav-link">
+                    <!-- _self = ouverture du lien dans l'onglet actuel -->
+                    <a href="covoiturages.html" target="_self">
+                        Covoiturages
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <!-- _blank = ouverture du lien dans un nouvel onglet -->
+                    <a href="https://www.stationf.co" target="_blank">
+                        Connexion
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main>
+        <section class="detail-container">
+
+            <h2>Détails du covoiturage</h2>
+
+            <div id="detailCovoiturage" class="detail-card">
+                <!-- Le JS remplira cette zone -->
+            </div>
+
+            <h3>Avis du conducteur</h3>
+            <div id="listeAvis" class="avis-container">
+                <!-- Le JS remplira cette zone -->
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <footer class="site-footer flux" role="contentinfo">
+            <div class="footer-inner">
+                <a href="mailto:covoiturage@eco-ride.fr" class="footer-email">covoiturage@eco-ride.fr</a>
+                <a href="mentions-legales.html" class="footer-legal" target="_blank">Mentions légales</a>
+            </div>
+            <div class="footer-copy">© Eco-Ride</div>
+        </footer>
+    </footer>
+
+</body>
+
+</html>

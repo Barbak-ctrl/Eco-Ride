@@ -1,0 +1,15 @@
+# Fichiers sensibles
+.env
+
+# Dépendances Node
+node_modules/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Uploads éventuels
+uploads/
