@@ -20,8 +20,7 @@ Technologies utilisées
     Backend : Node.js, Express
     Base de données : PostgreSQL
     Sécurité : bcrypt pour le hash des mots de passe
-    Outils : Thunder Client, Docker (optionnel)
-
+    Outils : Thunder Client, Docker
 Installation
 
     Cloner le projet :
@@ -48,7 +47,6 @@ Le schéma comprend notamment les tables :
     avis
     marque
 
-Un fichier SQL ou un MCD peut être ajouté dans le dossier /docs.
 Sécurité
 
     Les mots de passe sont hashés avec bcrypt.
