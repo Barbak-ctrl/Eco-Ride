@@ -26,7 +26,7 @@ Installation
 
     Cloner le projet :
     bash
-    git clone https://github.com/ton-utilisateur/eco-ride.git
+    git clone https://github.com/Barbak-ctrl/Eco-Ride.git
     
     Installer les dépendances :
     bash
